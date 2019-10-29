@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+IndexIgnore *
+
+RewriteCond %{HTTP_HOST} ^compufytechnologyllc.com [NC]
+RewriteRule ^(.*)$ https://www.compufytechnologyllc.com/$1 [L,R=301,NC]
